@@ -1,0 +1,17 @@
+[package]
+name = "lau-agent-thermodynamics"
+version = "0.1.0"
+edition = "2021"
+description = "Full thermodynamic treatment of agents — Landauer bound, Carnot efficiency, Maxwell's demon, Szilard engine, fluctuation theorems, and optimal learning schedules"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-agent-thermodynamics"
+keywords = ["thermodynamics", "agents", "landauer", "entropy", "computation"]
+categories = ["science", "mathematics", "simulation"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+
+[dev-dependencies]
+approx = "0.5"
+serde_json = "1"
